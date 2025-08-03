@@ -1,8 +1,8 @@
 from typing import List
 
 class Solution:
+    # Brute force solution with TC n(logn)
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        # Brute force solution with TC n(logn)
         i = 0
         result = []
 
@@ -12,6 +12,7 @@ class Solution:
         
         return sorted(result)
     
+    # Optimal solution using two pointers approach. TC O(n)
     def sortedSquaresOptimal(self, nums: List[int]) -> List[int]:
         i = 0
         j = len(nums) - 1
